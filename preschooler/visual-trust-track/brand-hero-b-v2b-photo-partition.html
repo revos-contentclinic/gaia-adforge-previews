@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Preschooler.sg — v2b photo-partition (1080×1350)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     Preschooler.sg — brand-hero-b-v2b-photo-partition
+     Layout: Photo in middle band, content cleanly partitioned above + below
+     1080×1350 Meta portrait (4:5)
+     ============================================================ */
+
+  :root {
+    --hand-pink:        #E5A8C8;
+    --mark-blue:        #5B9FD0;
+    --mark-green:       #A3CD63;
+    --mark-orange:      #F0A848;
+    --mark-red:         #D5556A;
+    --brand-purple:     #7B4FB8;
+    --headline-black:   #1A1A1A;
+    --tagline-gray:     #666666;
+    --bg-cream:         #FBF6EE;
+    --white:            #FFFFFF;
+    --logo-bg:          #F2EDE3;
+    --logo-border:      #E5DDC9;
+    --safe-margin:      54px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    font-family: 'Manrope', system-ui, sans-serif;
+    background: #2c2c2c;
+    color: var(--headline-black);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .ad {
+    width: 1080px;
+    height: 1350px;
+    background: var(--bg-cream);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ============================================================
+     SECTION 1 — TOP CREAM BAND (brand + headline)
+     ============================================================ */
+  .top-section {
+    background: var(--bg-cream);
+    padding: var(--safe-margin) var(--safe-margin) 36px;
+  }
+
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .finger-marks {
+    display: flex;
+    gap: 6px;
+  }
+
+  .finger-mark {
+    width: 18px;
+    height: 38px;
+    border-radius: 9px;
+  }
+  .finger-mark.blue   { background: var(--mark-blue);   }
+  .finger-mark.green  { background: var(--mark-green);  }
+  .finger-mark.orange { background: var(--mark-orange); }
+  .finger-mark.red    { background: var(--mark-red);    }
+
+  .brand-id {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .brand-id .mini-hand {
+    width: 38px;
+    height: 38px;
+    background: var(--hand-pink);
+    border-radius: 50% 50% 45% 45%;
+    position: relative;
+  }
+  .brand-id .mini-hand::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 12px;
+    width: 10px;
+    height: 16px;
+    background: var(--hand-pink);
+    border-radius: 50%;
+  }
+
+  .brand-id .wordmark {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    color: var(--headline-black);
+  }
+
+  .headline {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: var(--headline-black);
+    margin-bottom: 22px;
+  }
+
+  .subhead {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--headline-black);
+  }
+
+  /* ============================================================
+     SECTION 2 — PHOTO BAND (middle)
+     ============================================================ */
+  .photo-band {
+    background: linear-gradient(
+      135deg,
+      #D9B485 0%,
+      #E8C99B 25%,
+      #F5DCB5 50%,
+      #ECCFA5 75%,
+      #D9B485 100%
+    );
+    flex-grow: 1;
+    min-height: 420px;
+    max-height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo-placeholder-label {
+    background: rgba(255,255,255,0.75);
+    border: 2px dashed rgba(0,0,0,0.3);
+    border-radius: 16px;
+    padding: 20px 32px;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  /* ============================================================
+     SECTION 3 — BOTTOM CREAM BAND (logos + pills)
+     ============================================================ */
+  .bottom-section {
+    background: var(--bg-cream);
+    padding: 28px var(--safe-margin) var(--safe-margin);
+  }
+
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo-slot {
+    background: var(--white);
+    border: 1.5px dashed var(--logo-border);
+    border-radius: 10px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tagline-gray);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .logos-anchor {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--tagline-gray);
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+  }
+
+  .pills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    background: var(--white);
+    border-radius: 18px;
+    padding: 14px 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+  }
+
+  .pill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .pill-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--brand-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 18px;
+  }
+
+  .pill-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    line-height: 1.3;
+    color: var(--headline-black);
+  }
+
+  .pill-text strong {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="ad">
+
+  <!-- SECTION 1: TOP cream band with brand + headline -->
+  <div class="top-section">
+    <div class="top-bar">
+      <div class="brand-id">
+        <div class="mini-hand"></div>
+        <div class="wordmark">Preschooler.sg</div>
+      </div>
+      <div class="finger-marks">
+        <div class="finger-mark blue"></div>
+        <div class="finger-mark green"></div>
+        <div class="finger-mark orange"></div>
+        <div class="finger-mark red"></div>
+      </div>
+    </div>
+    <h1 class="headline">Shortlist Your Child's<br>Top 5 Preschools<br>in 30 Seconds!</h1>
+    <p class="subhead">Our free matching tool compares over 2,000 preschools by fees, location, and programs, so you don't have to.</p>
+  </div>
+
+  <!-- SECTION 2: PHOTO BAND (middle, partitioned) -->
+  <div class="photo-band">
+    <div class="photo-placeholder-label">PHOTO HERE<br>child in preschool setting<br>1080 × ~440</div>
+  </div>
+
+  <!-- SECTION 3: BOTTOM cream band with logos + pills -->
+  <div class="bottom-section">
+    <div class="logos-grid">
+      <div class="logo-slot">Logo 1</div>
+      <div class="logo-slot">Logo 2</div>
+      <div class="logo-slot">Logo 3</div>
+      <div class="logo-slot">Logo 4</div>
+      <div class="logo-slot">Logo 5</div>
+      <div class="logo-slot">Logo 6</div>
+      <div class="logo-slot">Logo 7</div>
+      <div class="logo-slot">Logo 8</div>
+    </div>
+    <div class="logos-anchor">Trusted partners across Singapore</div>
+    <div class="pills">
+      <div class="pill">
+        <div class="pill-icon">⚡</div>
+        <div class="pill-text"><strong>Fast &amp; Easy</strong>Match in 30 seconds</div>
+      </div>
+      <div class="pill">
+        <div class="pill-icon">🎯</div>
+        <div class="pill-text"><strong>Smart Matching</strong>Personalised for you</div>
+      </div>
+      <div class="pill">
+        <div class="pill-icon">♥</div>
+        <div class="pill-text"><strong>100% Free</strong>No fees. No commitments.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
