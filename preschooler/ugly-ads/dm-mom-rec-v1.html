@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Preschooler.sg — DM Screenshot (ugly ad, 1080×1350)</title>
+<style>
+  /* ============================================================
+     Preschooler.sg — dm-mom-rec-v1
+     Branch C (Native Camouflage)
+     Format 09: DM Screenshot (iMessage UI)
+     1080×1350 Meta portrait (4:5)
+
+     Substrate intentionally DROPPED. Native iMessage UI fidelity.
+
+     ⚠ CONSENT NOTE — production version requires real consented DM.
+     This preview shows the FORMAT + DIRECTION using anonymized
+     placeholder names + dialogue. Real consented exchange swaps in
+     before ship.
+     ============================================================ */
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: #2c2c2c;
+    color: #1c1c1e;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .ad {
+    width: 1080px;
+    height: 1350px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ============================================================
+     iOS STATUS BAR
+     ============================================================ */
+  .status-bar {
+    height: 56px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1c1c1e;
+  }
+
+  .status-bar .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+  }
+
+  /* ============================================================
+     iMESSAGE NAV BAR
+     ============================================================ */
+  .nav-bar {
+    height: 130px;
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid rgba(0,0,0,0.12);
+    position: relative;
+  }
+
+  .nav-bar .back {
+    position: absolute;
+    left: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007AFF;
+    font-size: 38px;
+    font-weight: 400;
+  }
+
+  .nav-bar .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c084c8 0%, #e5a8c8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .nav-bar .name {
+    font-size: 22px;
+    color: #1c1c1e;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+  }
+
+  /* ============================================================
+     CHAT BODY
+     ============================================================ */
+  .chat {
+    flex-grow: 1;
+    padding: 26px 28px 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: #ffffff;
+  }
+
+  .day-divider {
+    text-align: center;
+    color: #8e8e93;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 0 20px;
+  }
+
+  .day-divider .time {
+    font-weight: 400;
+    margin-left: 6px;
+  }
+
+  /* Message bubbles */
+  .bubble-row {
+    display: flex;
+    margin-bottom: 2px;
+  }
+
+  .bubble-row.received {
+    justify-content: flex-start;
+  }
+
+  .bubble-row.sent {
+    justify-content: flex-end;
+  }
+
+  .bubble {
+    max-width: 78%;
+    padding: 18px 26px;
+    border-radius: 36px;
+    font-size: 30px;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+  }
+
+  .bubble.received {
+    background: #e9e9eb;
+    color: #1c1c1e;
+    border-bottom-left-radius: 12px;
+  }
+
+  .bubble.sent {
+    background: #007AFF;
+    color: white;
+    border-bottom-right-radius: 12px;
+  }
+
+  /* Tail spacing */
+  .bubble-row + .bubble-row.same-sender {
+    margin-top: -2px;
+  }
+
+  /* Read indicator */
+  .read-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 6px 0;
+  }
+
+  .read-row .label {
+    font-size: 18px;
+    color: #8e8e93;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="ad">
+
+  <!-- iOS Status Bar -->
+  <div class="status-bar">
+    <div>9:42</div>
+    <div class="right">
+      <span>●●●●○</span>
+      <span>📶</span>
+      <span>🔋</span>
+    </div>
+  </div>
+
+  <!-- iMessage Nav -->
+  <div class="nav-bar">
+    <div class="back">‹</div>
+    <div class="avatar">L</div>
+    <div class="name">Lin ›</div>
+  </div>
+
+  <!-- Chat -->
+  <div class="chat">
+
+    <div class="day-divider">Today<span class="time">9:38 AM</span></div>
+
+    <div class="bubble-row sent">
+      <div class="bubble sent">hey have you found a preschool for Mei yet?</div>
+    </div>
+
+    <div class="bubble-row sent same-sender">
+      <div class="bubble sent">I'm losing it 😩 15 tabs open and nothing makes sense</div>
+    </div>
+
+    <div class="bubble-row sent same-sender">
+      <div class="bubble sent">she starts next year and I don't even know where to begin</div>
+    </div>
+
+    <div class="bubble-row received">
+      <div class="bubble received">omg same like last month</div>
+    </div>
+
+    <div class="bubble-row received same-sender">
+      <div class="bubble received">try preschooler.sg</div>
+    </div>
+
+    <div class="bubble-row received same-sender">
+      <div class="bubble received">free tool, asks about your kid then gives you a shortlist of 5 in 30 sec</div>
+    </div>
+
+    <div class="bubble-row received same-sender">
+      <div class="bubble received">I got 3 I'd never heard of that turned out perfect for us</div>
+    </div>
+
+    <div class="bubble-row sent">
+      <div class="bubble sent">5? like actually matched??</div>
+    </div>
+
+    <div class="bubble-row received">
+      <div class="bubble received">yea by location, fees, program type. just made my Sat visits 100x easier</div>
+    </div>
+
+    <div class="bubble-row sent">
+      <div class="bubble sent">sending now thank you 🙏</div>
+    </div>
+
+    <div class="read-row">
+      <div class="label">Read 9:42 AM</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

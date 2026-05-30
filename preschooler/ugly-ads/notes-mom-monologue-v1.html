@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Preschooler.sg — Notes Screenshot (ugly ad, 1080×1350)</title>
+<style>
+  /* ============================================================
+     Preschooler.sg — notes-mom-monologue-v1
+     Branch C (Native Camouflage)
+     Format 02: iPhone Notes Screenshot
+     1080×1350 Meta portrait (4:5)
+
+     Substrate intentionally DROPPED. Native iOS Notes UI fidelity.
+     ============================================================ */
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: #2c2c2c;
+    color: #1c1c1e;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .ad {
+    width: 1080px;
+    height: 1350px;
+    background: #fcfaf7;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ============================================================
+     iOS STATUS BAR
+     ============================================================ */
+  .status-bar {
+    height: 56px;
+    background: #fcfaf7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1c1c1e;
+  }
+
+  .status-bar .time {
+    letter-spacing: -0.5px;
+  }
+
+  .status-bar .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .status-bar .signal,
+  .status-bar .wifi,
+  .status-bar .battery {
+    font-size: 24px;
+  }
+
+  /* ============================================================
+     NOTES NAV BAR
+     ============================================================ */
+  .nav-bar {
+    height: 90px;
+    background: #fcfaf7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.06);
+  }
+
+  .nav-back {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #ff9500;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .nav-back-arrow {
+    font-size: 38px;
+    margin-right: 2px;
+    line-height: 1;
+  }
+
+  .nav-actions {
+    display: flex;
+    gap: 28px;
+    font-size: 32px;
+    color: #ff9500;
+  }
+
+  /* ============================================================
+     CONTENT BODY
+     ============================================================ */
+  .content {
+    flex-grow: 1;
+    padding: 32px 48px 60px;
+    overflow: hidden;
+  }
+
+  .timestamp {
+    color: #8e8e93;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    letter-spacing: -0.2px;
+  }
+
+  .body-text {
+    font-size: 34px;
+    line-height: 1.42;
+    color: #1c1c1e;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+  }
+
+  .body-text p {
+    margin-bottom: 24px;
+  }
+
+  .body-text .bullet {
+    padding-left: 0;
+    text-indent: -22px;
+    margin-left: 22px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="ad">
+
+  <!-- iOS Status Bar -->
+  <div class="status-bar">
+    <div class="time">9:42</div>
+    <div class="right">
+      <span class="signal">●●●●○</span>
+      <span class="wifi">📶</span>
+      <span class="battery">🔋</span>
+    </div>
+  </div>
+
+  <!-- Notes Nav Bar -->
+  <div class="nav-bar">
+    <div class="nav-back">
+      <span class="nav-back-arrow">‹</span>
+      <span>Notes</span>
+    </div>
+    <div class="nav-actions">
+      <span>⊕</span>
+      <span>⋯</span>
+    </div>
+  </div>
+
+  <!-- Note Content -->
+  <div class="content">
+    <p class="timestamp">May 28, 2026 at 9:42 AM</p>
+    <div class="body-text">
+      <p>Things I wish someone told me before the preschool search:</p>
+      <p class="bullet">— "When are you starting?" is the wrong question. It's "how do you narrow 2,000 down to 5?"</p>
+      <p class="bullet">— 15 tabs open is not progress</p>
+      <p class="bullet">— Found Preschooler.sg last week. Free tool, takes 30 seconds. Got a shortlist of 5 that actually fit my kid.</p>
+      <p class="bullet">— Going to visit 2 this Saturday</p>
+      <p>Saving this for the next overwhelmed parent who DMs me.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
